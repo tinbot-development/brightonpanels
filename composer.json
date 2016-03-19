@@ -35,7 +35,7 @@
       "type": "package",
       "package": {
         "name": "advanced-custom-fields/advanced-custom-fields-pro",
-        "version": "5.3.0",
+        "version": "5.3.5",
         "type": "wordpress-plugin",
         "dist": {
           "type": "zip",
@@ -51,7 +51,7 @@
     "johnpbloch/wordpress": "4.4.2",
     "oscarotero/env": "^1.0",
     "roots/wp-password-bcrypt": "1.0.0",
-    "advanced-custom-fields/advanced-custom-fields-pro": "5.3.0",
+    "advanced-custom-fields/advanced-custom-fields-pro": "~5.3.5",
     "wpackagist-plugin/wp-migrate-db": "0.7.2",
     "wpackagist-plugin/browser-body-classes-with-shortcodes": "1.6",
     "wpackagist-plugin/simple-custom-css": "3.3"
