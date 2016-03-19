@@ -4,9 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ccadf9bf33121ee23fdd5848eb355a37",
-    "content-hash": "72d8a9780ea3232c6be0fcc42c1dbc92",
+    "hash": "5b3a0d77fa829226ddc5ba14a0f48cf4",
+    "content-hash": "de48ca1ca574d90134e54c95d1d93f0c",
     "packages": [
+        {
+            "name": "advanced-custom-fields/advanced-custom-fields-pro",
+            "version": "5.3.0",
+            "dist": {
+                "type": "zip",
+                "url": "http://connect.advancedcustomfields.com/index.php?p=pro&a=download&k=b3JkZXJfaWQ9NTU1Nzl8dHlwZT1kZXZlbG9wZXJ8ZGF0ZT0yMDE1LTA1LTA3IDAyOjExOjA2",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "wordpress-plugin"
+        },
         {
             "name": "composer/installers",
             "version": "v1.0.23",
@@ -339,6 +350,26 @@
                 "environment"
             ],
             "time": "2015-12-29 15:10:30"
+        },
+        {
+            "name": "wpackagist-plugin/browser-body-classes-with-shortcodes",
+            "version": "1.6",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/browser-body-classes-with-shortcodes/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/browser-body-classes-with-shortcodes.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/browser-body-classes-with-shortcodes/"
         },
         {
             "name": "wpackagist-plugin/simple-custom-css",
