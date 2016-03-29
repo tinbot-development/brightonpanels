@@ -1,0 +1,11 @@
+.btn {
+    border-radius: 0;
+    box-shadow: 3px 3px 8px darken($brand-primary, 20);
+    padding-left: 2em;
+    padding-right: 2em;
+
+    &.btn-lg{
+      padding-left: 3em;
+      padding-right: 3em;
+    }
+}

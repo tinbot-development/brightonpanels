@@ -1,0 +1,29 @@
+.widget{
+  margin: 20px 0 2em;
+  &.widget_nav_menu {
+    ul.menu {
+        list-style: none;
+        > li {
+            padding-bottom: 1em;
+            > a {
+                text-decoration: underline;
+            }
+        }
+    }
+  }
+  #testimonial-carousel {
+    margin: 1em 2em 1em 40px;
+      blockquote {
+         padding: 0 2em 0 1em;
+          a{
+              display: block;
+              &:hover {
+                text-decoration: none;
+              }
+          }
+          &:hover {
+            border-color: $brand-primary;
+          }
+      }
+  }
+}

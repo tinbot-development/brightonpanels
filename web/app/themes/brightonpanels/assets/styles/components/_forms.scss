@@ -13,3 +13,18 @@
   @extend .btn;
   @extend .btn-default;
 }
+
+
+.gform_wrapper {
+  .gform_footer {
+    input.button,
+    input[type=submit],
+    input[type=image] {
+        @extend .btn;
+        @extend .btn-primary;
+        @extend .btn-lg;
+    }
+
+  }
+
+}

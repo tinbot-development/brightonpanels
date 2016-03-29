@@ -1,0 +1,35 @@
+body.page {
+  //Default Page Template Styles
+  &.page-template-default {
+    .content {
+      padding: 0 0 4em 0;
+      main.main {
+        .after-page-content-cta {
+            a.btn-primary {
+              margin: 2em 0;
+            }
+            img {
+                margin: 1em 0;
+            }
+        }
+      }
+    }
+  }
+  //Fullwidth Template
+  &.page-template-template-fullwidth {
+    .content {
+      padding: 0 0 4em 0;
+      main.main {
+      }
+    }
+  }
+
+  //Contact Page Template
+  &.page-template-template-contact {
+    .content {
+      padding: 0 0 4em 0;
+      main.main {
+      }
+    }
+  }
+}

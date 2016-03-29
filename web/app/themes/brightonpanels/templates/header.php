@@ -16,7 +16,7 @@
   <div class="main-nav">
     <div class="row">
       <div class="col-sm-12">
-      <a href="home"><img class="img-responsive" src="<?php bloginfo('template_url'); ?>/assets/images/comp-logo.png" alt="banner"></a>
+      <a href="<?php echo home_url();?>"><img class="img-responsive" src="<?php bloginfo('template_url'); ?>/assets/images/comp-logo.png" alt="banner"></a>
       </div>
     </div>
     <div class="container">

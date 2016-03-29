@@ -1,0 +1,23 @@
+body.page {
+  .testimonials-archive {
+    blockquote {
+      margin: 2em 0;
+    }
+
+  }
+}
+
+body.archive {
+    .content {
+      padding: 0 0 4em 0;
+    }
+//News Post Type Archive
+&.post-type-archive-news {
+    main.main {
+        .news-content-holder {
+          margin-bottom: 2em;
+        }
+    }
+}
+
+}

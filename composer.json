@@ -54,7 +54,10 @@
     "advanced-custom-fields/advanced-custom-fields-pro": "~5.3.5",
     "wpackagist-plugin/wp-migrate-db": "0.7.2",
     "wpackagist-plugin/browser-body-classes-with-shortcodes": "1.6",
-    "wpackagist-plugin/simple-custom-css": "3.3"
+    "wpackagist-plugin/simple-custom-css": "3.3",
+    "wpackagist-plugin/custom-post-type-ui": "1.2.4",
+    "wpackagist-plugin/custom-taxonomies-menu-widget": "1.4",
+    "wpackagist-plugin/custom-sidebars": "2.1.0.1"
 
   },
   "extra": {
