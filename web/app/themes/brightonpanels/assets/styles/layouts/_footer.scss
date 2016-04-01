@@ -1,0 +1,135 @@
+.sub-footer {
+    padding-top: 4em;
+    .logo-padding {
+        padding-top: 4em;
+    }
+}
+
+
+footer.content-info {
+    .bottom-footer {
+        h3 {
+            margin-bottom: 1em;
+            border-bottom: 1px solid #eee;
+        }
+        a {
+            color: white;
+            text-decoration: underline;
+        }
+    }
+    .footer-links {
+        padding: 1em 0;
+        ul{
+            float: right;
+            list-style: none;
+            padding: 0;
+            li{
+                float: right;
+                a {
+                    color: #fff;
+                    font-size: 11px;
+                    border-right: 1px solid white;
+                    margin-right: 1em;
+                    padding-right: 1em;
+                }
+                &:first-child {
+                    a { border: none;}
+                }
+            }    
+        }
+    }
+}
+
+body.desktop {
+    .footer-links {
+        width: 100%;
+    }
+}
+
+//Mobile Styles
+body.mobile {
+     .sub-footer {
+         padding-top: 0;
+         .quality-bg {
+             padding-top: 2em;
+             padding-bottom: 2em;
+             h1 {
+                 font-size: 44px;
+                 text-align: center;
+                 margin: 0;
+             }
+             .logo-warranty {
+                 .img-responsive { margin: auto }
+             }
+         }
+     }
+     .footer-widget {
+         .col-md-6 {
+             .img-responsive {
+                 margin: 1em auto;
+             }
+         }
+     }
+    footer.content-info{
+        ul.social-icons {
+            padding: 1em 0;
+            width: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            li {
+                margin-right: 12px;
+                &:last-child { margin-right: 0;}
+            }
+        }
+        .footer-links ul {
+            float: none;
+            margin: auto;
+            width: 351px;
+            display: block;
+        }
+        @media screen and (max-device-width: 320px){
+            //iPhone 5 and smaller screen device width
+            .footer-links {
+                ul{
+                    width: 79%;
+                    li:first-child a {
+                        border-right: 1px solid;
+                    }
+                }
+            }
+        }
+    }
+
+ }
+
+body.tablet {
+    .sub-footer {
+        @media screen and (orientation: portrait){
+            padding-top: 1em;
+            .quality-bg {
+                height: 160px;
+                h1 {
+                    font-size: 40px;
+                }
+                .logo-warranty {
+                    margin-top: -4em;
+                    .img-responsive { margin: auto }
+                }
+            }
+        }
+        @media screen and (orientation: landscape){
+            .quality-bg {
+                height: 178px;
+                .logo-warranty {
+                    margin-top: -6em;
+                    .img-responsive { margin: auto }
+                }
+            }
+        }
+    }
+    footer.content-info {
+        ul.social-icons {
+            padding: 1em 0;
+        }
+    }
+}

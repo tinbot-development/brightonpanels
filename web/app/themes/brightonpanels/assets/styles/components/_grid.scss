@@ -4,7 +4,30 @@
   .sidebar-primary & {
     @include make-sm-column($main-sm-columns - $sidebar-sm-columns);
   }
+
 }
 .sidebar {
   @include make-sm-column($sidebar-sm-columns);
+}
+
+
+.accredited-brands-grid {
+    aside.image-holder {
+        height: 80px;
+        margin-bottom: 1em;
+        //Vertical Align Middle The Child Element
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        img.img-responsive {
+            @include vertical-align();
+            margin: 0 auto;
+        }
+    }
+}
+
+body.mobile {
+  .accredited-brands-grid {
+      padding-top: 1em;
+  }
 }

@@ -118,7 +118,7 @@ function display_sidebar() {
     is_front_page(),
     is_page_template('template-fullwidth.php'),
     is_page_template('template-contact.php'),
-    is_archive(),
+//    is_archive(),
   ]);
 
   return apply_filters('sage/display_sidebar', $display);

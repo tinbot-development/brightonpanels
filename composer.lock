@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8eeaf9439d7ce81cd1f3fe0e93228d01",
-    "content-hash": "8e0d64b1184cbf58df75d5c725c83ac0",
+    "hash": "cd6db237b94662c791e0b46e88f3b03c",
+    "content-hash": "bce1922810ad593bf3cdfd2ddaed5c7b",
     "packages": [
         {
             "name": "advanced-custom-fields/advanced-custom-fields-pro",
@@ -372,6 +372,26 @@
             "homepage": "https://wordpress.org/plugins/browser-body-classes-with-shortcodes/"
         },
         {
+            "name": "wpackagist-plugin/custom-facebook-feed",
+            "version": "2.4",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/custom-facebook-feed/",
+                "reference": "tags/2.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/custom-facebook-feed.2.4.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/custom-facebook-feed/"
+        },
+        {
             "name": "wpackagist-plugin/custom-post-type-ui",
             "version": "1.2.4",
             "source": {
@@ -430,6 +450,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/custom-taxonomies-menu-widget/"
+        },
+        {
+            "name": "wpackagist-plugin/instagram-feed",
+            "version": "1.3.11",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/instagram-feed/",
+                "reference": "tags/1.3.11"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/instagram-feed.1.3.11.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/instagram-feed/"
         },
         {
             "name": "wpackagist-plugin/simple-custom-css",

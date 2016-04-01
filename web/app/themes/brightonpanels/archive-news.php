@@ -2,6 +2,8 @@
 /** Loop News CPT
  */
 
+get_template_part('templates/page', 'header');
+
        if(have_posts()):
 
        while ( have_posts() ) : the_post();
@@ -13,7 +15,6 @@
             echo '</div>';
        endwhile;
        echo paginate_links();
-
 
            wp_reset_query();
    endif;

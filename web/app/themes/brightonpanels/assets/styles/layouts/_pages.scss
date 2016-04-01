@@ -33,3 +33,13 @@ body.page {
     }
   }
 }
+
+body.home {
+    &.mobile {.content-repair-bg {
+        .col-sm-6{
+            margin-bottom: 2em;
+        }
+    }
+
+    }
+}

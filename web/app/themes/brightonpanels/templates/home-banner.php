@@ -1,49 +1,4 @@
-<?php if ( function_exists( 'soliloquy' ) ) { soliloquy( '25' ); } ?>
-
-
-<div class="container">
-  <div class="row logo-padding">
-    <div class="col-xs-12 col-sm-6 col-md-6">
-        <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/assets/images/repair-logo.png" alt="logo">
-    </div>
-    <div class="col-xs-12 col-sm-6 col-md-6 table-padding">
-        <table>
-          <tr>
-            <td>
-              <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/assets/images/logo-img1.png" alt="logo">
-            </td>
-            <td>
-              <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/assets/images/logo-img2.png" alt="logo">
-            </td>
-            <td>
-              <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/assets/images/logo-img3.png" alt="logo">
-            </td>
-            <td>
-              <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/assets/images/logo-img4.png" alt="logo">
-            </td>
-          </tr>
-        </table>
-        <table>
-          <tr>
-            <td>
-              <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/assets/images/logo-img5.png" alt="logo">
-            </td>
-            <td>
-                <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/assets/images/logo-img6.png" alt="logo">
-            </td>
-            <td>
-                <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/assets/images/logo-img7.png" alt="logo">
-            </td>
-            <td>
-              <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/assets/images/logo-img8.png" alt="logo">
-            </td>
-          </tr>
-        </table>
-
-    </div>
-  </div>
-</div>
-
+<?php get_template_part('templates/section','accreditation');?>
 <div class="content-repair-bg">
   <div class="container">
     <div class="row">
@@ -62,10 +17,33 @@
             </p>
           </div>
           <div class="col-sm-6">
-            <?php echo '<img class="img-responsive" src="' . $image['url'] . '" alt="' . $image['alt'] . '" />'; ?>
-          </div>
+            <div class="embed-container">
+              <?php
+              // get iframe HTML
+              $iframe = get_field('video_embed');
+              // use preg_match to find iframe src
+              preg_match('/src="(.+?)"/', $iframe, $matches);
+              $src = $matches[1];
+              // add extra params to iframe src
+              $params = array(
+                  'controls'    => 0,
+                  'showinfo'    => 0,
+                  'rel'        => 0,
+                  'hd'        => 1
+              );
+              $new_src = add_query_arg($params, $src);
+              $iframe = str_replace($src, $new_src, $iframe);
+              // add extra attributes to iframe html
+              $attributes = 'frameborder="0"';
 
-          <?php
+              $iframe = str_replace('></iframe>', ' ' . $attributes . '></iframe>', $iframe);
+
+              // echo $iframe
+              echo $iframe;
+              ?>
+            </div>
+           <p class="above-video"><i class="fa fa-video-camera"></i><?php the_field('video_caption');?></p>
+          </div><?php
         endif;
       endwhile;
       else :

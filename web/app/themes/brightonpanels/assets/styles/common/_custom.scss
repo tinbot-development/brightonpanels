@@ -1,0 +1,100 @@
+p.above-video {
+  width: 100%;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.57);
+  padding: 10px;
+}
+
+.sidebar .textwidget img {
+  width: 100%;
+}
+
+section.widget.text-7.widget_text {
+  margin-bottom: 0px;
+}
+
+ol li {
+  margin-bottom: 10PX;
+}
+
+.home td {
+  padding-left: 51px!important;
+}
+
+.slider-title h1 {
+  background-color: rgba(33, 64, 150, 0.74)!important;
+  color: white!important;
+  width: 88%;
+}
+
+
+.top-header {
+  background-color: rgba(33, 64, 150, 1)!important;
+  padding: 20px 0;
+}
+
+.item {
+  background-position: inherit!important;
+}
+
+.carousel .carousel-inner .item .slider-title>h1 {
+  font-family: Roboto Condensed,Roboto,Helvetica,Arial,sans-serif;
+  font-weight: 400!important;
+  text-shadow: 0px 0px 0px rgba(0,0,0,.5)!important;
+}
+
+
+.main-right .navbar-default {
+  font-size: 25px!important;
+}
+
+
+
+.top-header {
+  height: 60px;
+}
+
+.top-header p {
+  padding-top: 0px!important;
+  margin-top: 0px!important;
+}
+
+.textwidget img {
+  width: 20%;
+}
+
+.item.active {
+  max-height: 420px;
+}
+
+.col-sm-12.logo {
+  padding-left: 10%;
+}
+
+.top-header .widget {
+  margin-top: -5px;
+}
+
+.col-sm-12.background-logo {
+  border-top: 2px solid #214096;
+
+}
+
+.col-sm-12.logo {
+  margin-top: -49px;
+}
+
+.col-sm-12.background-logo {
+  margin-top: 50px;
+}
+
+body.desktop section#homeCarousel {
+  margin-top: -30px;
+}
+
+
+
+@media (min-width: 992px){
+  .home #homeCarousel .col-md-12 {
+    width: 70%!important;
+  }}

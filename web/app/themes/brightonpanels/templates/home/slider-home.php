@@ -27,12 +27,12 @@ if( have_rows('slides') ): ?>
       <div class="container">
         <section class="row" style="height: 500px;">
               <aside class="slider-title col-md-12">
-                <h1 style="font-size: 50px; color:<?php the_sub_field('banner_heading_text_color');?>;">
+                <h1 style="color:<?php the_sub_field('banner_heading_text_color');?>;">
                   <?php the_sub_field('banner_heading',false);?>
                 </h1>
               </aside>
               <div class="slider-caption col-md-12">
-                <h2 style="font-size: 128px; font-weight: 100;">
+                <h2>
                   <?php the_sub_field('slide_caption',false);?>
                 </h2>
               </div>

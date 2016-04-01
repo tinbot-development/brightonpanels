@@ -7,7 +7,7 @@
         <?php while ( have_rows('content') ) : the_row();
         $image= get_sub_field('image'); ?>
         <?php if( get_row_layout() == 'instagram' ): ?>
-            <h1><?php the_sub_field('title'); ?></h1>
+            <h2><?php the_sub_field('title'); ?></h2>
             <p>
                 <?php the_sub_field('content'); ?>
             </p>
@@ -26,15 +26,11 @@
     // check if the flexible content field has rows of data
     if( have_rows('content') ):
         ?>
-        <?php while ( have_rows('content') ) : the_row();
-        $image= get_sub_field('image'); ?>
+        <?php while ( have_rows('content') ) : the_row(); ?>
 
         <?php if( get_row_layout() == 'news' ): ?>
-            <h1><?php the_sub_field('title'); ?></h1>
-            <p>
+            <h2><?php the_sub_field('title'); ?></h2>
                 <?php the_sub_field('content'); ?>
-            </p>
-            <?php echo '<img src="' . $image['url'] . '" alt="' . $image['alt'] . '" />'; ?>
             <?php
         endif; ?>
         <?php
@@ -45,5 +41,7 @@
     ?>
 </div>
 </div>
-<?php the_content(); ?>
+<?php
+
+the_content(); ?>
 <?php wp_link_pages(['before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']); ?>

@@ -17,7 +17,10 @@ if($testimonials->have_posts()):
             <?php while ( $testimonials->have_posts() ) : $testimonials->the_post();
                 ?>
                 <blockquote class="item <?php echo ($slideNumber == 0)? 'active' :''; ?>">
-                    <?php the_content();?>
+                    <?php
+                    $trimmed_content = wp_trim_words( get_the_content(), 15, '<a href="'. get_permalink() .'"> ...Read More</a>' );
+                    echo $trimmed_content;
+                    ?>
                     <footer><cite title="Source Title"><?php the_title();?></cite></footer>
                 </blockquote>
                 <?php

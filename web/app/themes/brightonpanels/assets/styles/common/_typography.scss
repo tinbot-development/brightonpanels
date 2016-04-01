@@ -1,3 +1,10 @@
 h1, h2, h3, h4, h5 {
   font-family: $headings-font-family;
 }
+
+//Font Awesome Icons
+p {
+    > i.fa {
+      margin-right: 5px;
+    }
+}

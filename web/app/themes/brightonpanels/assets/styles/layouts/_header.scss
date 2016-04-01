@@ -4,3 +4,18 @@
 
     }
 }
+
+body.mobile {
+    header.banner {
+        .logo-holder {
+            .logo {
+                img {
+                    margin: auto;
+                }
+            }
+        }
+        ul.social-icons {
+            padding: 0;
+        }
+    }
+}
