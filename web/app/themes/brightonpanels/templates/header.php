@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 top-nav">
           <p>
-            <i class="fa fa-map-marker"></i>&nbsp;4 Bignell Road, Moorabbin VIC 3189&nbsp;&nbsp;&nbsp;&nbsp;<a href="tel:0395553522">&nbsp;<i class="fa fa-phone"></i> 03 9555 3522</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:info@brightonpanelworks.com.au"> <i class="fa fa-envelope-o"></i>&nbsp;info@brightonpanelworks.com.au</a>
+            <i class="fa fa-map-marker"></i>&nbsp;24 Bignell Road, Moorabbin VIC 3189&nbsp;&nbsp;&nbsp;&nbsp;<a href="tel:0395553522">&nbsp;<i class="fa fa-phone"></i> 03 9555 3522</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:info@brightonpanelworks.com.au"> <i class="fa fa-envelope-o"></i>&nbsp;info@brightonpanelworks.com.au</a>
           </p>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 top-social pull-right">
