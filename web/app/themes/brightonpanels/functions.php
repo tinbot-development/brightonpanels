@@ -81,3 +81,23 @@ function change_archive_title($title) {
 
   return $title;
 }
+
+
+/* Disable All Plugin Styles and Scripts
+ * Add these scripts and styles in assets/manifest.json for minification.
+ */
+
+add_action( 'wp_print_styles', 'plugins_dequeue_styles', 100 );
+function plugins_dequeue_styles() {
+  wp_dequeue_style( 'cff-font-awesome' );
+  wp_dequeue_style( 'cff' );
+  wp_dequeue_style( 'sb_instagram_icons' );
+  wp_dequeue_style( 'sb_instagram_styles' );
+}
+
+add_action( 'wp_print_scripts', 'plugins_dequeue_scripts', 100 );
+function plugins_dequeue_scripts() {
+//  wp_dequeue_script( 'sb_instagram_scripts' ); //SB Instagram Plugin
+//  wp_dequeue_script( 'shiftnav' ); //Shiftnav Plugin
+  wp_dequeue_script( 'cffscripts' ); //custom-facebook-feed Plugin
+}

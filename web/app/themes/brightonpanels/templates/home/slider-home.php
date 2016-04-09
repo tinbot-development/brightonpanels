@@ -2,7 +2,7 @@
 
 // check if the repeater field for Slider has rows of data
 if( have_rows('slides') ): ?>
-<section id="homeCarousel" class="carousel slide home-slider" data-ride="carousel" style="min-height: 500px;">
+<section id="homeCarousel" class="carousel slide home-slider" data-ride="carousel" style="min-height: 420px;">
   <!-- Indicators -->
   <?php
   //Hide Indicators if only one slide
@@ -23,7 +23,7 @@ if( have_rows('slides') ): ?>
 <?php  // loop through the rows of data
   $slide_number = 0;
   while ( have_rows('slides') ) : the_row(); ?>
-    <div class="item <?php echo ($slide_number == 0)? 'active':''; ?>" style="background: url('<?php the_sub_field("slide_image");?>') no-repeat center / cover; min-height: 500px;">
+    <div class="item <?php echo ($slide_number == 0)? 'active':''; ?>" style="background: url('<?php the_sub_field("slide_image");?>') no-repeat center / cover; max-height: 420px;">
       <div class="container">
         <section class="row" style="height: 500px;">
               <aside class="slider-title col-md-12">

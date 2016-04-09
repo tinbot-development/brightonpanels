@@ -8,6 +8,7 @@
   "private": true,
   "dependencies": {
     "bootstrap-sass": "3.3.6",
+    "fontawesome": "~4.5.0",
     "hover": "2.0.2"
   },
   "overrides": {
@@ -31,6 +32,12 @@
         "./assets/fonts/bootstrap/glyphicons-halflings-regular.ttf",
         "./assets/fonts/bootstrap/glyphicons-halflings-regular.woff",
         "./assets/fonts/bootstrap/glyphicons-halflings-regular.woff2"
+      ]
+    },
+    "fontawesome": {
+      "main": [
+        "./scss/font-awesome.scss",
+        "./fonts/*"
       ]
     },
     "hover": {
